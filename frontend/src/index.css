@@ -1229,3 +1229,193 @@ h3 {
   text-align: center;
   padding: 1.5rem 0 0.5rem;
 }
+
+/* ═══════════════════════════════════════
+   RESPONSIVE – Mobile (≤ 768px)
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── Navbar ── */
+  :root {
+    --navbar-height: 64px;
+  }
+
+  .navbar-logo-img {
+    height: 48px;
+    width: 48px;
+  }
+
+  /* Hide search bar & Home link on mobile — too cramped */
+  .navbar-nav {
+    gap: 0.75rem;
+  }
+
+  .navbar-tagline {
+    display: none;
+  }
+
+  /* Shrink search input on mobile */
+  .search-input-wrap {
+    width: 120px;
+  }
+
+  .search-input-wrap:focus-within {
+    width: 160px;
+  }
+
+  /* Dropdown menu anchors to right edge */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+    min-width: 160px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 5rem 1.25rem 3rem;
+    min-height: auto;
+  }
+
+  /* Stack images above/below text instead of side-by-side */
+  .hero-media-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-side-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  /* ── Stats Bar ── */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1.5rem;
+    padding: 2rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .stat-number {
+    font-size: 2.4rem;
+  }
+
+  /* ── Exercise Cards Grid ── */
+  .exercises-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+
+  .exercise-card {
+    padding: 1.2rem 1rem;
+  }
+
+  .exercise-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .exercise-card-title {
+    font-size: 1.2rem;
+  }
+
+  /* ── Video Grid ── */
+  /* 500px minimum was breaking mobile — switch to 1 column */
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* ── Content / Section pages ── */
+  .content-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .videos-section {
+    padding: 0 1.25rem 3rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Section Hero ── */
+  .section-hero {
+    padding: 4rem 1.25rem 2rem;
+  }
+
+  /* Hide oversized watermark text on mobile */
+  .section-hero::after {
+    display: none;
+  }
+
+  /* ── Accordion ── */
+  .accordion-section-wrapper {
+    padding: 0 1.25rem 3rem;
+  }
+
+  .accordion-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .accordion-body {
+    padding: 1.25rem 1.2rem;
+  }
+
+  .accordion-title {
+    font-size: 1.25rem;
+  }
+
+  /* ── Footer ── */
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* ── Lift History ── */
+  .lh-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lh-field--note {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Very small screens (≤ 420px) ── */
+@media (max-width: 420px) {
+  .exercises-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+
+  .hero-side-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Hide one of the two images on very small screens to save space */
+  .hero-side-img:last-child {
+    display: none;
+  }
+
+  .search-input-wrap {
+    width: 90px;
+  }
+}
