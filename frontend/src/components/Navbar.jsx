@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="navbar-inner">
 
                 <Link to="/" className="navbar-logo-link">
-                    <img src="/logo.png" alt="Blackhole Powerlifting Team" className="navbar-logo-img" />
+                    <img src="/logo2.png" alt="Blackhole Powerlifting Team" className="navbar-logo-img" />
                 </Link>
                 <span className="navbar-tagline">Let results be your voice</span>
                 <ul className="navbar-nav">

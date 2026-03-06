@@ -14,7 +14,7 @@
   --text-muted: #606060;
   --border: rgba(201, 161, 74, 0.2);
   --border-hover: rgba(201, 161, 74, 0.5);
-  --navbar-height: 72px;
+  --navbar-height: 96px;
   --shadow-gold: 0 4px 24px rgba(201, 161, 74, 0.15);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
   --radius: 12px;
@@ -129,8 +129,8 @@ h3 {
 }
 
 .navbar-logo-img {
-  height: 48px;
-  width: 48px;
+  height: 72px;
+  width: 72px;
   object-fit: contain;
   border-radius: 50%;
   display: block;
@@ -338,19 +338,19 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  max-width: 1000px;
-  margin: 0 auto 2.5rem;
+  gap: 3.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
   position: relative;
 }
 
 .hero-side-img {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid var(--accent-gold);
-  box-shadow: 0 0 15px rgba(201, 161, 74, 0.2);
+  box-shadow: 0 0 25px rgba(201, 161, 74, 0.25);
   flex-shrink: 0;
 }
 
