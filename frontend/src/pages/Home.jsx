@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import VideoCard from '../components/VideoCard'
+import { CONTENT } from '../data'
 
 const SQUAT_DESCRIPTION = 'Il re degli esercizi'
 const PANCA_DESCRIPTION = 'La regina della precisione'
@@ -32,17 +33,10 @@ const sections = [
 ]
 
 export default function Home() {
-    const [content, setContent] = useState(null)
+    const content = CONTENT.home
     const location = useLocation()
 
-    useEffect(() => {
-        fetch('http://localhost:8000/api/content/home')
-            .then(r => r.json())
-            .then(setContent)
-            .catch(() => setContent({ title: 'Powerlifting Italia', description: '', videos: [] }))
-    }, [])
-
-    // Scroll to anchor after content loads or hash changes
+    // Scroll to anchor after hash changes
     useEffect(() => {
         if (!content) return
         const hash = location.hash.slice(1) // remove '#'

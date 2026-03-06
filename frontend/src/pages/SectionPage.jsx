@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import VideoCard from '../components/VideoCard'
+import { CONTENT } from '../data'
 
 const SQUAT_DESCRIPTION = 'Il re degli esercizi'
 const PANCA_DESCRIPTION = 'La regina della precisione'
@@ -70,21 +71,13 @@ function AccordionSection({ title, icon, children, defaultOpen = false, targetHa
 }
 
 export default function SectionPage({ section }) {
-    const [content, setContent] = useState(null)
+    const content = CONTENT[section] || null
     const location = useLocation()
     const meta = sectionMeta[section] || {}
     const isExpandable = EXPANDABLE_SECTIONS.includes(section)
     const hash = location.hash // e.g. '#video-hyemQWpldOA'
 
-    useEffect(() => {
-        setContent(null)
-        fetch(`http://localhost:8000/api/content/${section}`)
-            .then(r => r.json())
-            .then(setContent)
-            .catch(() => setContent(null))
-    }, [section])
-
-    // Scroll to anchor after content loads
+    // Scroll to anchor when hash or section changes
     useEffect(() => {
         if (!content || !hash) return
         const id = hash.slice(1)
@@ -95,7 +88,7 @@ export default function SectionPage({ section }) {
         return () => clearTimeout(timer)
     }, [content, hash])
 
-    if (!content) return <div className="loading">Caricamento...</div>
+    if (!content) return <div className="loading">Sezione non trovata.</div>
 
     return (
         <>
