@@ -60,8 +60,19 @@ export default function Home() {
                     <span className="gold">Black</span><span>Hole</span><br />Power<span className="gold">lifting</span>
                 </h1>
                 <p className="hero-subtitle">Forza · Tecnica · Sacrificio</p>
-                <p className="hero-powered">Powered by Alessio Fontanarossa</p>
-                <p className="hero-desc">{content.description}</p>
+                <div className="hero-media-row">
+                    <img
+                        src="/logo2.png"
+                        alt="Logo Black Hole"
+                        className="hero-side-img"
+                    />
+                    <p className="hero-desc">{content.description}</p>
+                    <img
+                        src="/profile.jpg"
+                        alt="Foto Profilo"
+                        className="hero-side-img"
+                    />
+                </div>
                 <Link to="/squat" className="hero-cta">
                     Inizia ora
                 </Link>

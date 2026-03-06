@@ -334,14 +334,33 @@ h3 {
   position: relative;
 }
 
+.hero-media-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2.5rem;
+  position: relative;
+}
+
+.hero-side-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 0 15px rgba(201, 161, 74, 0.2);
+  flex-shrink: 0;
+}
+
 .hero-desc {
-  max-width: 680px;
+  max-width: 600px;
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  position: relative;
-  margin-bottom: 2.5rem;
   white-space: pre-wrap;
+  text-align: center;
 }
 
 .hero-cta {
