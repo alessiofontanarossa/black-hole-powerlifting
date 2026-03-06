@@ -335,7 +335,7 @@ CONTENT = {
         "title": "Complementari",
         "subtitle": COMPLEMENTARI_DESCRIPTION,
         "description": (
-            "Gli esercizi complementari sono quelli che non fanno parte delle alzate principali di powerlifting e streetlifting"
+            "Gli esercizi complementari sono quelli che non fanno parte delle alzate principali di powerlifting e streetlifting "
             "ma che contribuiscono in modo decisivo alla loro progressione. "
             "Un atleta intelligente lavora sui propri punti deboli attraverso esercizi mirati: "
             "Stacchi Rumeni e Good Morning per la catena posteriore, "

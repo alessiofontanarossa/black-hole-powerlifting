@@ -171,6 +171,35 @@ export default function Home() {
                         title="150kg Panca Carola Garra Sheffield 2024"
                         embedUrl="https://www.youtube.com/embed/gD8w7gKRPdw?start=289&end=332"
                     />
+                    <VideoCard
+                        id="storia-stacco-milicia-305"
+                        title="305kg Stacco Dario Milicia"
+                        embedUrl="https://www.youtube.com/embed/7fPLXkCkcxo?start=560&end=604"
+                    />
+                    <VideoCard
+                        id="storia-squat-richichi-290"
+                        title="290kg Squat Matteo Richichi"
+                        embedUrl="https://www.instagram.com/p/C6EdV9kM34A/embed"
+                        portrait
+                    />
+                    <VideoCard
+                        id="storia-panca-richichi-190"
+                        title="190kg Panca Matteo Richichi"
+                        embedUrl="https://www.instagram.com/p/C6KA3UHrG_s/embed"
+                        portrait
+                    />
+                    <VideoCard
+                        id="storia-completa-lagreca"
+                        title="330,5kg - 205kg - 360,5kg Completa Marco La Greca"
+                        embedUrl="https://www.instagram.com/p/DSVsB6_js8x/embed"
+                        portrait
+                    />
+                    <VideoCard
+                        id="storia-completa-buscaroli"
+                        title="320kg - 202,5kg - 280kg Allenamento Tommaso Buscaroli"
+                        embedUrl="https://www.instagram.com/p/DUvcdCYgqhr/embed"
+                        portrait
+                    />
                 </div>
             </div>
         </>
